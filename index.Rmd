@@ -1,6 +1,6 @@
 --- 
-title: "A Minimal Book Example"
-author: "Yihui Xie"
+title: "The Field Guide to R in Server Environments"
+author: "Jacob C. Fisher"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -9,20 +9,17 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "This guide describes different the different types of server environments where users often find R, and explains best practices for how to submit commands in those environments."
 ---
 
-# Prerequisites
+# Welcome
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+This is the website for *The Field Guide to R in Server Enivronments*.  As R is increasingly used for high-performance computing, users may find that the jump from using R on a personal computer to using it on a server is larger than they might have assumed.  This book should make that transition easier.
 
-For now, you have to install the development versions of **bookdown** from Github:
+In this guide, I explain how to write R code & submit batch jobs in a variety of server environments.  Specifically, I focus on three main types of server environments:
 
-```{r eval=FALSE}
-devtools::install_github("rstudio/bookdown")
-```
-
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+1. Single-server environments
+2. Multiple-server environments with schedule
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
