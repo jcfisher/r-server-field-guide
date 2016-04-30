@@ -19,7 +19,11 @@ This is the website for *The Field Guide to R in Server Enivronments*.  As R is 
 In this guide, I explain how to write R code & submit batch jobs in a variety of server environments.  Specifically, I focus on three main types of server environments:
 
 1. Single-server environments
-2. Multiple-server environments with schedule
+2. Multiple-server environments with scheduler (like SLURM)
+3. Multiple-server environments with MapReduce framework (specifically SparkR)
+
+Although users 
+
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
